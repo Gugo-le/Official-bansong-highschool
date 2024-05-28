@@ -1,4 +1,4 @@
-CustomEase.create("cubic", "0.83, 0, 0,17, 1")
+CustomEase.create("cubic", "0.83, 0, 0.17, 1");
 let isAnimating = false;
 
 function splitTextIntoSpans(selector) {
@@ -8,12 +8,13 @@ function splitTextIntoSpans(selector) {
         let splitText = text
             .split("")
             .map(function(char) {
-                return `<span>&{char === " " ? "&nbsp;&nbsp;" : char}</span>`;
+                return `<span>${char === " " ? "&nbsp;&nbsp;" : char}</span>`;
             })
             .join("");
         element.innerHTML = splitText;
     });
 }
+
 
 function initializeCards() {
     let cards = Array.from(document.querySelectorAll(".card"));
