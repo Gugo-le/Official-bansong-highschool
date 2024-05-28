@@ -90,3 +90,39 @@ footer {
     transform: translate3d(-50%, -50%, 0);
     background: #000;
 }
+
+.card img {
+    position: absolute;
+    opacity: 0.75;
+}
+
+.copy {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    font-family: "PP Editional Old";
+    font-size: 6vw;
+    font-weight: 300;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: #dfe1c8;
+}
+
+h1 span {
+    position: relative;
+    display: inline-block;
+}
+
+@media (max-width: 900px) {
+    .pages {
+        display: none;
+    }
+}
