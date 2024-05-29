@@ -1,0 +1,2 @@
+User-agent: *Allow:/
+Sitemap: https://official-bansong-highschool.vercel.app/sitemap.xml
